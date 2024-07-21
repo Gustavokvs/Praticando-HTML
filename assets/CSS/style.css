@@ -1,0 +1,266 @@
+.cabecalho {
+    padding: 0.4em;
+    color: rgb(250, 244, 244);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(65, 2, 2);
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cabecalho li {
+    margin: 1em 14em;
+}
+
+.cabecalho a {
+    display: inline-block;
+    margin-right: 1.6em;
+    font-size: 1.4em;
+}
+
+.cabecalho a:hover {
+text-decoration:underline
+}
+
+.fotoENomeEFrase {
+    display: flex;
+    align-items: center;
+}
+
+.fotoENome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0em 0em;
+    margin-right: 1em;
+}
+
+.inerrante {
+    box-sizing: border-box;
+    border: 0.2em solid #ffffff;
+    border-radius: 1em;
+}
+
+.frase {
+    display: flex;
+    align-items: center;
+}
+
+.frase h4 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Caveat', cursive;
+}
+
+.conteudo {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: 4em;
+    line-height: 1.8em;
+}
+
+.conteudo h3 {
+    font-size: 1.2em;
+}
+
+.conteudo h2 {
+    font-size: 1.2em;
+}
+
+.canais a {
+    display: flex;
+    color: black;
+    flex-direction: column;
+    margin: 0.4em 2em;
+}
+
+.canais ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.canais li {
+    display: flex;
+    align-items: center;
+    /* Alinha a imagem e o texto dentro do li */
+    margin-bottom: 1em;
+    /* Espaço entre os itens da lista */
+}
+
+.canais img {
+    width: 4em;
+    height: auto;
+    /* Mantém a proporção da imagem */
+    margin-right: 1em;
+    /* Espaço entre a imagem e o texto do link */
+}
+
+.canais a {
+    display: flex;
+    align-items: center;
+    /* Alinha a imagem e o texto dentro do link */
+    color: black;
+    text-decoration: none;
+    flex-direction: row-reverse;
+    /* Faz com que o texto fique à direita da imagem */
+}
+
+.canais a:hover {
+    color: blue;
+    font-size: 1.1em;
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .cabecalho ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .cabecalho li {
+        margin: 0.5em 0;
+    }
+
+    .fotoENomeEFrase {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotoENome {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .conteudo {
+        margin: 2em 1em;
+    }
+
+    .canais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .canais a {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .canais img {
+        width: 3em;
+        margin-right: 0;
+        margin-bottom: 0.5em;
+    }
+}
+
+/* Telas médias (smartphones em paisagem e tablets) */
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .cabecalho ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .cabecalho li {
+        margin: 0.5em 0;
+    }
+
+    .fotoENomeEFrase {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fotoENome {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .conteudo {
+        margin: 2em;
+    }
+
+    .canais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .canais a {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .canais img {
+        width: 3.5em;
+        margin-right: 0;
+        margin-bottom: 0.5em;
+    }
+}
+
+/* Telas grandes (tablets em paisagem e desktops) */
+@media (min-width: 1024px) {
+    .cabecalho {
+        flex-direction: row;
+        align-items: center;
+        padding: 0.4em;
+    }
+
+    .cabecalho ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .cabecalho li {
+        margin: 0 1em;
+    }
+
+    .fotoENomeEFrase {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .fotoENome {
+        margin-right: 1em;
+    }
+
+    .conteudo {
+        margin: 4em;
+    }
+
+    .canais {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .canais a {
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .canais img {
+        width: 4em;
+        margin-right: 1em;
+    }
+}
